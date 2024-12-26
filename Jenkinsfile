@@ -26,7 +26,7 @@ pipeline {
             steps {
                 first([name:'World', age:22])
                 script{
-                    first.calcul(6)
+                   echo first.calcul(6)
                 }
             }
         }
