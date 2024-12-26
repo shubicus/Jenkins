@@ -1,3 +1,5 @@
+@Library('JenkinsLibs') _
+
 pipeline {
     agent any
 
@@ -17,6 +19,12 @@ pipeline {
       stage('Finish') {
             steps {
                 echo 'Finish World from Git'
+            }
+        }
+
+         stage('Finish') {
+            steps {
+                first([name:'World', age:22])
             }
         }
     }
