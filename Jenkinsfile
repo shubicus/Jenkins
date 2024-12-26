@@ -25,6 +25,9 @@ pipeline {
          stage('From shared lib') {
             steps {
                 first([name:'World', age:22])
+                script{
+                    first.calcul(6)
+                }
             }
         }
     }
