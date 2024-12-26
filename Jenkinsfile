@@ -24,12 +24,10 @@ pipeline {
 
          stage('From shared lib') {
             steps {
-                def x;
                 first([name:'World', age:22])
                 script{
-                   x = first.calcul(6)
+                   first.calcul(6)
                 }
-                echo 'XXX:' x
             }
         }
     }
