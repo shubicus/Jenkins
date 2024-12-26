@@ -22,7 +22,7 @@ pipeline {
             }
         }
 
-         stage('Finish') {
+         stage('From shared lib') {
             steps {
                 first([name:'World', age:22])
             }
